@@ -1,0 +1,26 @@
+        System.out.println (Katusen igge 20 cm hög);
+        System.out.println (palmen laura 5 m hög);
+        System.out.println (köttätande växt meatloaf 0,7 m hög);
+        System.out.println (palmen olof 1 m hög);
+        */
+
+        // vilken växt vill du få information om?
+        // användaren väljer växt
+        //vill du vattna? ja eller nej?
+        om ja, visa hur mycket och vad som ska vattnas med
+        bekräftelse på vattning
+        om nej, gå tillbaka till menyn
+
+
+        // vattna metod
+
+        // metod som håller koll om den är vattnad
+
+        // utskrift efter att den är vattnad
+
+
+        palmer 0.5 x längden i meter kranvatten
+        köttätande växt 0.1 + (0,2 x längden i meter) proteindryck
+        kaktus 0,02 Mineralvatten
+
+
