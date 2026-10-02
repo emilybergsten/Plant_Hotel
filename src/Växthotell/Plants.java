@@ -1,9 +1,11 @@
 package Växthotell;
 
-public class Plants implements FluidCalculator {
+public abstract class Plants implements FluidCalculator {
 
     Plants[] list = new Plants [4];
+    private FluidType fluidType; // Inkapsling
 
+    public Plants(FluidType fluidType) {}
     private String name;
     private float height;
     private String FluidType;
