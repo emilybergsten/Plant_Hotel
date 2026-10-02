@@ -4,7 +4,7 @@ public class Palm extends Plants {
 
     @Override
     public float calculateFluid() {
-        return 0.5 x height;
+        float sum = 0.5 * height;
         + (Växthotell.FluidType);
 
     }
