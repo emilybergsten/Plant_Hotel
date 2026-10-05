@@ -1,14 +1,29 @@
 package Växthotell;
 
+
+import static Växthotell.FluidType.MINERAL_WATER;
+
 public class Cactus extends Plants {
 
-    @Override
-    public float calculateFluid() {
-        return 0.02 + fluo;
+
+    public Cactus(String name, double height) {
+        super(name, height);
     }
 
-    public Cactus(String name, float height, String fluidType) {
-        super(name, height, fluidType);
+    @Override
+    public double calculateFluid() {
+        return 0.02;
+    }
+
+
+    //public Cactus(String name, float height, FluidType) {
+    // super(name, height, FluidType);
+    //}
+    public FluidType getFluidType() {
+        return MINERAL_WATER;
     }
 }
+
+
+
 
