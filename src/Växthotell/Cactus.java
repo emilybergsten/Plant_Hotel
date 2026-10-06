@@ -20,6 +20,7 @@ public class Cactus extends Plants {
     // super(name, height, FluidType);
     //}
     public FluidType getFluidType() {
+
         return MINERAL_WATER;
     }
 }

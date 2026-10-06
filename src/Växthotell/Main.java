@@ -5,8 +5,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+
+    Scanner scanner = new Scanner(System.in);
+
 
     Plants palm1 = new Palm("Laura", 5);
     Plants palm2 = new Palm("Olof", 1);
@@ -16,7 +18,7 @@ public class Main {
 
         boolean running = true;
         while (running){
-            showMenu();
+            showMenu(); // switch case meny
 
 
         System.out.println ("Växthotellet Greenest");
@@ -25,10 +27,17 @@ public class Main {
 
 
        
-        System.out.println ("Vilken växt ska få vätska?");
-        String input = scanner.nextLine().trim().toLowerCase();
+        System.out.println ("Vilken växt vill du få info om?");
 
-            if {
+
+        String input = scanner.nextLine().trim().toLowerCase();
+        if (input.contains (palm1||palm2||cactus1||carni) {
+            System.out.println("Växten " + Plants[i].getName());
+                System.out.println("Vätskemängd i liter; " + Plants[i].calculateFluid());
+                System.out.println("Vätsketyp: " + Plants[i].getFluidType());
+
+            }
+            )
                 input.isEmpty();
                 break;
 
