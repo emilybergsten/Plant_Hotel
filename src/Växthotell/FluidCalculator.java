@@ -1,7 +1,7 @@
 package Växthotell;
 
 public interface FluidCalculator {
-    double calculateFluid();
+    double  calculateFluid();
 
     //palmer 0.5 x längden i meter kranvatten
     //köttätande växt 0.1 + (0,2 x längden i meter) proteindryck

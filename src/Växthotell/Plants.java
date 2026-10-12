@@ -2,26 +2,25 @@ package Växthotell;
 
 public abstract class Plants implements FluidCalculator {
 
-    Plants[] list = new Plants [4];
-    private FluidType fluidType; // Inkapsling
-
+   // private FluidType fluidType; // Inkapsling
 
         private String name;
         private double height;
-        //private enum FluidType ;
+        private FluidType fluidType ;
 
-    Plants palm1 = new Palm("Laura", 5);
+    /*Plants palm1 = new Palm("Laura", 5);
     Plants palm2 = new Palm("Olof", 1);
     Plants cactus1 = new Cactus("Igge", 0.2);
-    Plants carni = new CarnivorousPlant("Meatloaf", 0.7);
+    Plants carni = new CarnivorousPlant("Meatloaf", 0.7);*/
 
     public Plants() {
 
     }
 
-    public Plants(String name, double height) {
+    public Plants(String name, double height, FluidType fluidType) {
         this.name = name;
         this.height = height;
+        this.fluidType = fluidType;
     }
 
     public String getName() {
@@ -31,16 +30,16 @@ public abstract class Plants implements FluidCalculator {
     public double getHeight() {
         return height;
     }
-    //public Plants(Växthotell.FluidType fluidType) {
-    // }
 
-    //public Plants(String name, float height, enum (fluidType)) {
-      //  this.name = name;
-        //this.height = height;
-       // FluidType = fluidType;
-
-
+    public FluidType getFluidType() {
+        return fluidType;
     }
-}
 
+    @Override
+    public abstract  double calculateFluid();
+
+
+
+
+}
 

@@ -7,10 +7,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
 
+        Menu menu = new Menu();
+        menu.showMenu();
+    }
+}
 
-    Plants palm1 = new Palm("Laura", 5);
+   /* Plants palm1 = new Palm("Laura", 5);
     Plants palm2 = new Palm("Olof", 1);
     Plants cactus1 = new Cactus("Igge", 0.2);
     Plants carni = new CarnivorousPlant("Meatloaf", 0.7);
@@ -55,4 +59,4 @@ public class Main {
     }
 
 
-}
+}*/

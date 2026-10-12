@@ -2,12 +2,19 @@ package Växthotell;
 
 public class CarnivorousPlant extends Plants {
 
+
+    private static final double PROTEIN_BASE= 0.1;
+    private static final double PROTEIN_HEIGHT = 0.2;
+
+
+    public CarnivorousPlant (String name, double height){
+        super(name, height, FluidType.PROTEIN_DRINK);
+    }
+    // Polymorfism där palm har egen uträkning för vätska
     @Override
     public double calculateFluid() {
-        return 0.1 + (0.2 * height) +Växthotell.FluidType;
+        return PROTEIN_BASE + (PROTEIN_HEIGHT* getHeight());
+
     }
 
-    public CarnivorousPlant(String name, double height) {
-        super(name, height);
-    }
 }

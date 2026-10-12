@@ -1,30 +1,17 @@
 package Växthotell;
 
 
-import static Växthotell.FluidType.MINERAL_WATER;
-
 public class Cactus extends Plants {
 
 
-    public Cactus(String name, double height) {
-        super(name, height);
-    }
+    private static final double MINERAL_VOLUME= 0.02;
 
+    public Cactus (String name, double height){
+        super(name, height, FluidType.MINERAL_WATER);
+    }
+    // Polymorfism där palm har egen uträkning för vätska
     @Override
     public double calculateFluid() {
-        return 0.02;
-    }
-
-
-    //public Cactus(String name, float height, FluidType) {
-    // super(name, height, FluidType);
-    //}
-    public FluidType getFluidType() {
-
-        return MINERAL_WATER;
+        return MINERAL_VOLUME;
     }
 }
-
-
-
-
