@@ -30,6 +30,9 @@ public class Hotel {
 
     }
 
+    public List<Plants> getPlants() {
+        return plants;
+    }
 }
 
 

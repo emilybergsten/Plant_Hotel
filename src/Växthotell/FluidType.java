@@ -1,9 +1,9 @@
 package Växthotell;
 
 public enum FluidType {
-    WATER("kranvatten"),
-    MINERAL_WATER("mineralvatten"),
-    PROTEIN_DRINK("proteindryck");
+    WATER("Kranvatten"),
+    MINERAL_WATER("Mineralvatten"),
+    PROTEIN_DRINK("Proteindryck");
 
     private final String displayString;
 

@@ -18,8 +18,26 @@ public class Menu {
         boolean running = true;
         System.out.println("Välkommen till Växthotellet Greenest!");
 
-        while (running) {
+        // Skriv ut alla växter och deras typ direkt efter välkomnandet
+        System.out.println("Här är alla växter på hotellet:");
+        for (Plants p : hotel.getPlants()) {
+            String colorCode = "\u001B[0m"; // Standardfärg
 
+            // Kontrollera växttyp med instanceof för att sätta rätt färg
+            if (p instanceof CarnivorousPlant) {
+                colorCode = "\u001B[31m"; // Röd för köttätande växt
+            } else if (p instanceof Palm) {
+                colorCode = "\u001B[33m"; // Brun/Gul för palm
+            } else if (p instanceof Cactus) {
+                colorCode = "\u001B[32m"; // Grön för kaktus
+            }
+
+            // Skriv ut med färg och återställ sedan till standard direkt efter
+            System.out.println(colorCode + "- " + p.getName() + " (" + p.getClass().getSimpleName() + ")" + "\u001B[0m");
+        }
+
+        System.out.println("----------------------------------------");
+        while (running) {
             System.out.println("\nVilken växt vill du veta mer om? (Skriv namnet eller 'avsluta'):");
             System.out.print("> ");
 
