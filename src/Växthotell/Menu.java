@@ -7,7 +7,7 @@ public class Menu {
 
 
     private Hotel hotel; // Menyn behöver känna till hotellet för att nå växterna
-    private Scanner scanner;
+    private Scanner scanner; // kanske kan ta bort
 
     public Menu() {
         this.hotel = new Hotel(); // Skapar hotellet och dess växter
@@ -32,7 +32,7 @@ public class Menu {
                 colorCode = "\u001B[32m"; // Grön för kaktus
             }
 
-            // Skriv ut med färg och återställ sedan till standard direkt efter
+            // Skriv ut med färg och återställ till standard direkt efter
             System.out.println(colorCode + "- " + p.getName() + " (" + p.getClass().getSimpleName() + ")" + "\u001B[0m");
         }
 

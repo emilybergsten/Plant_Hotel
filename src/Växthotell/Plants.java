@@ -36,7 +36,7 @@ public abstract class Plants implements FluidCalculator {
     }
 
     @Override
-    public abstract  double calculateFluid();
+    public abstract double calculateFluid();
 
 
 

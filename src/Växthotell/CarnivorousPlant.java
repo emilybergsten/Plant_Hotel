@@ -8,6 +8,7 @@ public class CarnivorousPlant extends Plants {
 
 
     public CarnivorousPlant (String name, double height){
+
         super(name, height, FluidType.PROTEIN_DRINK);
     }
     // Polymorfism där palm har egen uträkning för vätska

@@ -14,6 +14,22 @@ public class Main {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    /* Plants palm1 = new Palm("Laura", 5);
     Plants palm2 = new Palm("Olof", 1);
     Plants cactus1 = new Cactus("Igge", 0.2);
