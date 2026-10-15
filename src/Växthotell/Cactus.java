@@ -11,9 +11,10 @@ public class Cactus extends Plants {
         super(name, height, FluidType.MINERAL_WATER);
     }
 
-    // Polymorfism där palm har egen uträkning för vätska
+    // Polymorfism där kaktus har egen uträkning för vätska
     @Override
     public double calculateFluid() {
+
         return MINERAL_VOLUME;
     }
 }

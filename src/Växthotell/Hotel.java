@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Hotel {
     private List<Plants> plants;
 
-    //KOnstruktor som körs när hotellet skapas
+    //Konstruktor som körs när hotellet skapas
     public Hotel(){
         plants = new ArrayList<>();
 
