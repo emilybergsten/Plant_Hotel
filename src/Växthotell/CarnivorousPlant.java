@@ -1,10 +1,10 @@
 package Växthotell;
 
 public class CarnivorousPlant extends Plants {
-
+// ärver från plantklassen
 
     private static final double PROTEIN_BASE = 0.1;
-    private static final double PROTEIN_HEIGHT = 0.2;
+    private static final double PROTEIN_HEIGHT = 0.2; //inkapsling
 
 
     public CarnivorousPlant (String name, double height){
@@ -12,7 +12,7 @@ public class CarnivorousPlant extends Plants {
         super(name, height, FluidType.PROTEIN_DRINK);
     }
 
-    // Polymorfism där köttätande växt har egen uträkning för vätska
+    // Arv
     @Override
     public double calculateFluid() {
         return PROTEIN_BASE + (PROTEIN_HEIGHT * getHeight());

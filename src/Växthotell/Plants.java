@@ -6,7 +6,7 @@ public abstract class Plants implements FluidCalculator {
 
         private String name;
         private double height;
-        private FluidType fluidType ;
+        private FluidType fluidType ;// inkapsling
 
 
     public Plants(String name, double height, FluidType fluidType) {
@@ -14,16 +14,19 @@ public abstract class Plants implements FluidCalculator {
         this.height = height;
         this.fluidType = fluidType;
     }
-
+        // inkapsling
     public String getName() {
+
         return name;
     }
 
     public double getHeight() {
+
         return height;
     }
 
     public FluidType getFluidType() {
+
         return fluidType;
     }
 

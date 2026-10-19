@@ -7,7 +7,7 @@ public class Menu {
 
 
     private Hotel hotel; // Menyn behöver känna till hotellet för att nå växterna
-    private Scanner scanner;
+    private Scanner scanner; //inkapsling
 
     public Menu() {
         this.hotel = new Hotel(); // Skapar hotellet och dess växter

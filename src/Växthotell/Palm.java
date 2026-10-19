@@ -3,14 +3,14 @@ package Växthotell;
 public class Palm extends Plants {
 
 
-    private static final double WATER_VOLUME = 0.5;
+    private static final double WATER_VOLUME = 0.5; //inkapsling
 
     public Palm (String name, double height){
 
         super(name, height, FluidType.WATER);
     }
 
-    // Polymorfism där palm har egen uträkning för vätska
+    // Arv
     @Override
     public double calculateFluid() {
         return WATER_VOLUME * getHeight();

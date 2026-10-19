@@ -2,7 +2,7 @@ package Växthotell;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+
 
 public class Hotel {
     private List<Plants> plants;
@@ -14,7 +14,8 @@ public class Hotel {
         plants.add (new Palm("Laura", 5.0));
         plants.add (new Palm("Olof", 1.0));
         plants.add (new Cactus("Igge", 0.2));
-        plants.add (new CarnivorousPlant("Meatloaf", 0.7));// polymorformism
+        plants.add (new CarnivorousPlant("Meatloaf", 0.7));// polymorfism
+        // kanske hårdkodat
 
 
     }// metod som söker efter en växt
@@ -29,7 +30,8 @@ public class Hotel {
 
     }
 
-    public List<Plants> getPlants() {
+    public List<Plants> getPlants() { // metod som hämtar växter från Hotel
+
         return plants;
     }
 }
