@@ -15,7 +15,7 @@ public class Hotel {
         plants.add (new Palm("Olof", 1.0));
         plants.add (new Cactus("Igge", 0.2));
         plants.add (new CarnivorousPlant("Meatloaf", 0.7));// polymorfism
-        // kanske hårdkodat
+
 
 
     }// metod som söker efter en växt
