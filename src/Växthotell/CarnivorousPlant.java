@@ -1,7 +1,7 @@
 package Växthotell;
 
 public class CarnivorousPlant extends Plants {
-// ärver från plantklassen
+
 
     private static final double PROTEIN_BASE = 0.1;
     private static final double PROTEIN_HEIGHT = 0.2; //inkapsling

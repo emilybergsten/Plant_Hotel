@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Menu {
 
 
-    private Hotel hotel; // Menyn behöver känna till hotellet för att nå växterna
+    private Hotel hotel;
     private Scanner scanner; //inkapsling
 
     public Menu() {
-        this.hotel = new Hotel(); // Skapar hotellet och dess växter
+        this.hotel = new Hotel();
         this.scanner = new Scanner(System.in);
     }
 
@@ -18,22 +18,22 @@ public class Menu {
         boolean running = true;
         System.out.println("Välkommen till Växthotellet Greenest!");
 
-        // Skriv ut alla växter och deras typ
+        // Skriv ut alla växter
         System.out.println("Här är alla växter på hotellet:");
         for (Plants p : hotel.getPlants()) {
-            String colorCode = "\u001B[0m"; // Standardfärg
+            String colorCode = "\u001B[0m";
 
-            // Kontrollera växttyp med instanceof för att sätta rätt färg
+
             if (p instanceof CarnivorousPlant) {
-                colorCode = "\u001B[31m"; // Röd för köttätande växt
+                colorCode = "\u001B[31m";
             } else if (p instanceof Palm) {
-                colorCode = "\u001B[36m"; // Brun/Gul för palm
+                colorCode = "\u001B[36m";
             } else if (p instanceof Cactus) {
-                colorCode = "\u001B[32m"; // Grön för kaktus
+                colorCode = "\u001B[32m";
             }
 
-            // Skriv ut med färg och återställer direkt efter
-            System.out.println(colorCode + "- " + p.getName() + " (" + p.getClass().getSimpleName() + ")" + "\u001B[0m");// skriver smidigare ut klassen
+
+            System.out.println(colorCode + "- " + p.getName() + " (" + p.getClass().getSimpleName() + ")" + "\u001B[0m");
         }
 
         System.out.println("----------------------------------------");

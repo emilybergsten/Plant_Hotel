@@ -2,7 +2,7 @@ package Växthotell;
 
 public abstract class Plants implements FluidCalculator {
 
-   // Inkapsling
+
 
         private String name;
         private double height;

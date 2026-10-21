@@ -7,7 +7,7 @@ import java.util.List;
 public class Hotel {
     private List<Plants> plants;
 
-    //Konstruktor som körs när hotellet skapas
+
     public Hotel(){
         plants = new ArrayList<>();
 
@@ -18,14 +18,14 @@ public class Hotel {
 
 
 
-    }// metod som söker efter en växt
+    }
     public Plants findPlant(String name){
         for (Plants plant: plants){
             if (plant.getName().equalsIgnoreCase(name)){
-                return plant; //om växt hittades
+                return plant;
             }
         }
-        return null; // hittade inte växt
+        return null;
 
 
     }
